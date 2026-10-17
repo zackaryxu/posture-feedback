@@ -10,6 +10,7 @@ FILES = (
     "LICENSE",
     "MANIFEST.in",
     "README.md",
+    "assets/demo.png",
     "THIRD_PARTY_NOTICES.md",
     "pyproject.toml",
     "requirements-test.txt",

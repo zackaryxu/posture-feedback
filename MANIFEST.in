@@ -2,3 +2,4 @@ include LICENSE THIRD_PARTY_NOTICES.md README.md requirements-test.txt posture-m
 recursive-include scripts *.py
 recursive-include tests *.py
 global-exclude *.pyc
+recursive-include assets *.png
