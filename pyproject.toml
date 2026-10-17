@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77,<81", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "posture-feedback"
+version = "0.1.1"
+description = "Local camera and video posture drift feedback"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+dependencies = [
+  "numpy==1.26.4",
+  "mediapipe==0.10.14",
+  "opencv-contrib-python==4.11.0.86",
+  "certifi==2026.6.17",
+  "jax==0.7.1",
+  "jaxlib==0.7.1",
+]
+
+[project.scripts]
+posture-feedback = "posture_feedback.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

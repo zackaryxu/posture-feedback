@@ -1,0 +1,4 @@
+include LICENSE THIRD_PARTY_NOTICES.md README.md requirements-test.txt posture-monitor.command
+recursive-include scripts *.py
+recursive-include tests *.py
+global-exclude *.pyc
